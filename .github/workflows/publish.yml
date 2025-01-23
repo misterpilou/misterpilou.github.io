@@ -7,7 +7,16 @@ on:
 
 jobs:
   build-and-deploy:
+    needs: build
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out
         uses: actions/checkout@v4
@@ -18,7 +27,7 @@ jobs:
       - name: Build the site
         run: ./build.sh
 
-      - name: Deploy
+      - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: public
