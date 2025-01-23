@@ -23,7 +23,7 @@
        (list "my-org-site"
              :recursive t
              :base-directory "./content"
-             :publishing-directory "./public"
+             :publishing-directory "./build"
              :publishing-function 'org-html-publish-to-html
              :with-author t 
              :with-creator t
