@@ -1,0 +1,24 @@
+#+title: A blog about workflow, programming and making my way into a gnu world
+
+* Overview
+
+This is an example of a website written with _org-mode_. 
+Here is a link to my [[./projects.org][others projects]] i will be doing in parallel
+
+* This site would be a small blog about me and my pursuit of gnurvana
+
+
+Recently i decide to take the path of using gnu tools to change my workflow, more precisely a lot of gnu tools.
+Those include *guix*, *emacs* and *org-mode*. As a way of maintaining and continuing this goal, i'm trying to
+generate a blog directly via org to takes notes and memos about my way into the gnu style of doing computing.
+To be honest, i always wanting to try those tools. It looks so comfy, simple and i know a lots of great people maintain
+this workflow for years and made it wonderful. So i will try to dig into it and make my way.
+
+#+BEGIN_SRC cpp
+#include <iostream>
+
+int main() {
+    std::cout << "This is a test to see if code block shows off";
+    return 0;
+}
+#+END_SRC

@@ -1,0 +1,5 @@
+#+title: Some blog posts about projects i have been working on
+
+* Creating some emulators
+
+This is a wip project, i will tell more about it later
